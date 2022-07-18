@@ -1,0 +1,57 @@
+<% layout('/layouts/boilerplate')%>
+<div class="row">
+    <h1 class="text-center">New Campground</h1>
+    <div class="col-6 offset-3">
+        <form action="/campgrounds" method="POST" novalidate class="validated-form" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label class="form-label" for="title">Title</label>
+                <input class="form-control" type="text" id="title" name="campground[title]" required>
+                <!-- 这种input的name方式可以后期使它成为一个JS object -->
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="location">Location</label>
+                <input class="form-control" type="text" id="location" name="campground[location]" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="price">Price</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="price-label">$</span>
+                    <input class="form-control" type="text" id="price" placeholder="0.00" name="campground[price]"
+                        aria-describedby="price-label" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="description">Description</label>
+                <textarea class="form-control" type="text" id="description" name="campground[description]"
+                    required></textarea>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" for="image">Select Images</label>
+                <div class="custom-file mb-3">
+                    <input type="file" name="image" class="form-control" id="image" multiple>
+                    <label class="custom-file-label mt-2" for="image" display="block"></label>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <Button class="btn btn-success btn-center">Add campground</Button>
+            </div>
+        </form>
+        <a class="mb-3" href="/campgrounds">Back to All Campgrounds</a>
+
+    </div>
+</div>
