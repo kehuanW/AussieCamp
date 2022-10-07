@@ -1,5 +1,5 @@
 mapboxgl.accessToken = mapToken;
-console.log(mapboxgl.accessToken)
+// console.log(mapboxgl.accessToken)
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/outdoors-v11', // stylesheet location
