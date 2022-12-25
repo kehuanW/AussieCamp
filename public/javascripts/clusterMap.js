@@ -6,7 +6,7 @@ const map = new mapboxgl.Map({
     zoom: 3.5
 });
 
-console.log(campgrounds)
+// console.log(campgrounds)
 
 map.on('load', () => {
     // Add a new source from our GeoJSON data and

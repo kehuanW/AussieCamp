@@ -19,6 +19,11 @@
     text-align: center;
 }
 
+#card-list {
+    max-height:82vh; 
+    overflow-y:scroll;
+}
+
 @media screen and (max-width: 992px) {
     .card-title {
         font-size: 18px;
@@ -31,5 +36,10 @@
 
     .card-text {
         font-size: 14px;
+    }
+
+    #card-list { 
+        max-height: none;
+        overflow-y:hidden;
     }
 }
