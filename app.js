@@ -43,7 +43,7 @@ app.use(methodOverride('_method'));
 //防止用户mongo injection
 app.use(mongoSanitize());
 
-app.use("/favicon.ico", express.static('public/favicon.ico'));
+app.use("/favicon.ico", express.static('public/img/favicon.ico'));
 
 app.use(express.static(path.join(__dirname, 'public')))
 
