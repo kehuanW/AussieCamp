@@ -115,16 +115,19 @@ or
 
 - helmet
     - ^5.1.0
+    - Securing apps by setting various HTTP headers (Setting Content-Security-Policy)
 
 - express-session
     - ^1.17.3
-    - for flash message and authentication
+    - For flash message and authentication
 
 - connect-flash:
     - ^0.1.1 
     - flashing success or failure messages for users.
 
-- "connect-mongo": "^3.2.0",
+- connect-mongo 
+    - ^3.2.0"
+    - Handling mongo conection security
 
 - passport
     - ^0.6.0
