@@ -7,7 +7,7 @@
     An Awesome Web Application for Camping Enthusiasts to Share, Edit, and Review Campsites!
     <br/>
     <br/>
-    <a href="https://aussie-camp.onrender.com"><strong>Explore the live application »</strong></a>
+    <a href="https://aussiecamp.herokuapp.com/"><strong>Explore the live application »</strong></a>
     <br/>
     <br/>
   </p>
